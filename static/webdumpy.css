@@ -1,0 +1,263 @@
+
+@font-face {
+    font-family: "Roboto 2014";
+    font-weight: 400;
+    src: url(/dashboard/res/Roboto-Regular.ttf); }
+
+@font-face {
+    font-family: "Roboto 2014";
+    font-weight: 700;
+    src: url(/dashboard/res/Roboto-Bold.ttf); }
+/*/
+
+@font-face {
+    font-family: "Purista";
+    font-weight: 400;
+    src: url(/res/Titillium-Regular.otf); }
+
+@font-face {
+    font-family: "Purista";
+    font-weight: 700;
+    src: url(/res/Titillium-Bold.otf); }
+/*/
+
+html {
+    background-color: #606aa0;
+    background-image: linear-gradient(to left, #001040, #008080);}
+
+body {
+    background: #fff;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    font: 400 10pt "Open Sans", "Trebuchet MS", monospace; }
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 3em; }
+
+th {
+    background: #1f3840;
+    color: #fff;
+    font-weight: 700; }
+
+th:nth-child(1) {
+    width: 0.5em; }
+
+th, td {
+    padding: 8px;
+    font-family: "Open Sans", "Calibri", monospace;
+    font-size: 10pt;
+    text-align: left; }
+
+.btn {
+    border: 0;
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font: 400 10pt "Open Sans", "Calibri", monospace;
+    transition: box-shadow 0.5s ease;
+    padding: 4px 8px; }
+
+.btn:active {
+    background: #000;
+    color: #fff; }
+
+.btn:hover {
+/*
+    border-bottom-width: 4px;
+    padding-bottom: 2px;
+*/
+    box-shadow: inset 0 -2px 0 0 #000;
+    background: #777; }
+
+input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+
+input[type=checkbox] {
+	background: #fafafa;
+	border: 1px solid #dcdcdc;
+	padding: 2px; }
+
+.hidden {
+    display: none; }
+
+.flink {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted #ddd; }
+    
+a {
+	color: #5f5f5f;
+	text-decoration: none; }
+
+textarea {
+	background: #fcfcfc;
+	padding: 6px;
+	border: 1px solid #dcdcdc;
+	width: 100%;
+	height: 480px;
+	resize: vertical;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	box-sizing: border-box;
+	font: 400 10pt "Consolas", "Lucida Console", "Roboto Mono", monospace;}
+
+
+/*** EXTENDED ***/
+
+.form-button {
+ display: inline-block;
+ background-color: inherit;
+ border: 2px solid #000;
+ color: #000;
+ padding: 4px 16px;
+ font: 400 10pt "Open Sans", sans-serif;
+ vertical-align: middle;
+ text-transform: uppercase;
+}
+.form-button:active {
+ color: #000;
+}
+.form-button_accent {
+ background-color: #f04840;
+ color: #fff;
+}
+.form-button_accent:active {
+ background-color: #d02820;
+}
+.form-button_regular {
+ background-color: #ffffff;
+}
+.form-button_regular:active {
+ background-color: #cccccc;
+}
+.form-button_compact {
+ font-size: 8pt;
+ padding: 4px 8px;
+}
+.form-input__input {
+ background-color: #fff;
+ border: 2px solid #000;
+ padding: 4px 8px;
+ font: 400 10pt "Open Sans", sans-serif; 
+}
+.form-input__input:focus {
+ border-color: #07e;
+}
+.form-input {
+ display: flex;
+ flex-direction: column;
+}
+.form-input__input:focus + .form-input__label{
+ color: #07e;
+}
+.form-input__input_danger + .form-input__label{
+ color: #f22;
+}
+.form-input__label {
+ order: 1;
+ color: #888;
+ font: 400 10pt "Roboto 2014", "Open Sans", sans-serif;
+ transition: color 0.5s ease;
+}
+.form-input__input {
+ transition: border-color 0.5s ease;
+ order: 2;
+}
+.form-input__input_danger {
+ border-bottom: 2px solid #f22;
+}
+
+.layout-bar {
+    display: flex;
+    display: -webkit-box;
+    align-items: center;
+    -webkit-box-pack: justify;
+}
+.layout-bar__fixed {
+    padding: 4px;
+}
+.layout-bar__fluid {
+    padding: 4px;
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+}
+.layout-bar_regular {
+    background-color: #8088a0;
+    color: #FFF;
+    color: #000;
+}
+
+.layout-bar_footer-fixed {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ max-width: 960px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    max-width: 960px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal__row {
+    padding: 8px;
+}
+
+.modal__row_right {
+    text-align: right;
+}
+
+.standalone-input {
+     background-color: #fff;
+     display: block;
+     width: 100%;
+     box-sizing: border-box;
+     border: 2px solid #000;
+     padding: 4px 8px;
+     font: 400 10pt "Roboto 2014", "Open Sans", sans-serif;
+}
+
+.m-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@media screen and (max-width: 480px) {
+    th:nth-child(3), td:nth-child(3) {
+        display: none;
+    }
+    td, th {
+        max-width: 200px; }
+}
